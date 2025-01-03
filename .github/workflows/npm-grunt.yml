@@ -1,0 +1,29 @@
+name: NodeJS with Grunt
+cambios rapidos y segurod
+on:2
+  push:4
+    branches: [ "main"pulsar ] [menu]
+  pull_request:aceptar
+    branches: [ "main" ] aceptar
+
+jobs:3
+  build:2
+    runs-on: ubuntu-latest
+menu
+    strategy:3
+      matrix:2
+        node-version: [18.x, 20.x, 22.x]
+cambio 
+    steps:2
+    - uses: actions/checkout@v4
+3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+aceptar
+    - name: Build
+      run: 25
+        npm install
+        grunt
+cambio
